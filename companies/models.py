@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from django.conf import settings
 
 # from SmartHire.settings import AUTH_USER_MODEL
@@ -37,3 +38,7 @@ class Company(models.Model):
     
     def __str__(self):
         return self.name
+=======
+
+# Create your models here.
+>>>>>>> 1bf5e7ac4d7554eaa72a7d6f65cb20b81b9d48b6
