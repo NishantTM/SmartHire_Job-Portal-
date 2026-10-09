@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-body">
+
+            {% if company.logo %}
+            <img src="{{ company.logo.url }}" alt="{{ company.name }}" width="100" class="mb-3"> {% endif %}
+
+            <h2>{{ company.name }}</h2>
+
+            <p>
+                <strong>Industry:</strong> {{ company.industry }}
+            </p>
+
+            <p>
+                <strong>Location:</strong> {{ company.location }}
+            </p>
+
+            <p>
+                <strong>Company Size:</strong> {{ company.company_size }}
+            </p>
+
+            <div class="mt-4">
+
+                <a href="{% url 'company_detail' %}" class="btn btn-primary">
+                    View Profile
+                </a>
+
+                <a href="{% url 'company_edit' %}" class="btn btn-warning">
+                    Edit Profile
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
