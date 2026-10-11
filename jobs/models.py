@@ -1,8 +1,6 @@
 from django.db import models
-<<<<<<< HEAD
 
 # Create your models here.
-=======
 from django.contrib.auth import get_user_model
 
 # Fetch the active user model
@@ -74,4 +72,3 @@ class Application(models.Model):
 
     def __str__(self):
         return f"{self.applicant.username} - {self.job.title}"
->>>>>>> 1bf5e7ac4d7554eaa72a7d6f65cb20b81b9d48b6
